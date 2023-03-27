@@ -22,8 +22,9 @@ module.exports = {
     }
   },
   rules: {
-    quotes: ['error', 'single'],
-    semi: ['error', 'never'],
+    quotes: ['warn', 'single'],
+    semi: ['warn', 'never'],
+    'arrow-parens': ['warn', 'as-needed'],
     'react/prop-types': 'off',
     'react/display-name': 'off'
   }
