@@ -42,6 +42,7 @@ const Cart = props => {
     )
     setIsSubmitting(false)
     setDidSubmit(true)
+    cartCtx.clearCart()
   }
 
   const cartItems = (
@@ -74,7 +75,6 @@ const Cart = props => {
 
   const cartModalContent = (
     <>
-      {' '}
       {cartItems}
       <div className={classes.total}>
         <span>Total Amount</span>
