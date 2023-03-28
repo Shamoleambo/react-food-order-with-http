@@ -25,6 +25,16 @@ module.exports = {
     quotes: ['warn', 'single'],
     semi: ['warn', 'never'],
     'arrow-parens': ['warn', 'as-needed'],
+    'comma-dangle': [
+      'warn',
+      {
+        arrays: 'never',
+        objects: 'never',
+        imports: 'never',
+        exports: 'never',
+        functions: 'never'
+      }
+    ],
     'react/prop-types': 'off',
     'react/display-name': 'off'
   }
